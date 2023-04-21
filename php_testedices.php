@@ -112,7 +112,7 @@
 		<p><?php echo $st_resultado; ?></p>
 		<br>
 
-		<p><a href="https://github.com/jacknpoe/php_testejuros">Repositório no GitHub</a></p><br><br>
+		<p><a href="https://github.com/jacknpoe/php_testedices">Repositório no GitHub</a></p><br><br>
 		<form action="index.html" method="POST" style="border: 0px">
 			<p><input type="submit" name="voltar" value="Voltar"></p>
 		</form>
