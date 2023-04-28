@@ -81,10 +81,10 @@
 		?>
 		<h1>Rola Dados</h1><br>
 
-		<div style="height:200px; width:360px; display: inline-block; vertical-align: top;">
+		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>Dungeon and Dragons<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Lados: <input type="text" name="dd_lados" value="<?php echo $dd_lados; ?>" style="width: 50px"></p>
+				<p>Lados: <input type="text" name="dd_lados" value="<?php echo $dd_lados ?>" style="width: 50px" <?php if( isset( $_POST[ 'dd_rodar'])) { echo "autofocus"; } ?>></p>
 				<p>Quantidade: <input type="text" name="dd_quantidade" value="<?php echo $dd_quantidade; ?>" style="width: 50px"></p>
 				<p>Modificador: <input type="text" name="dd_modificador" value="<?php echo $dd_modificador; ?>" style="width: 50px"></p>
 				<p><input type="submit" name="dd_rodar" value="Jogar"></p>
@@ -94,10 +94,10 @@
 			<br>
 		</div>
 
-		<div style="height:200px; width:360px; display: inline-block; vertical-align: top;">
+		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>GURPS<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Quantidade: <input type="text" name="gurps_quantidade" value="<?php echo $gurps_quantidade; ?>" style="width: 50px"></p>
+				<p>Quantidade: <input type="text" name="gurps_quantidade" value="<?php echo $gurps_quantidade;?>" style="width: 50px" <?php if( isset( $_POST[ 'gurps_rodar'])) { echo "autofocus"; } ?>></p>
 				<p>Modificador: <input type="text" name="gurps_modificador" value="<?php echo $gurps_modificador; ?>" style="width: 50px"></p>
 				<p><input type="submit" name="gurps_rodar" value="Jogar"></p>
 			</form><br>
@@ -106,10 +106,10 @@
 			<br>
 		</div>
 
-		<div style="height:200px; width:360px; display: inline-block; vertical-align: top;">
+		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>Storyteller<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Quantidade: <input type="text" name="st_quantidade" value="<?php echo $st_quantidade; ?>" style="width: 50px"></p>
+				<p>Quantidade: <input type="text" name="st_quantidade" value="<?php echo $st_quantidade; ?>" style="width: 50px" <?php if( isset( $_POST[ 'st_rodar'])) { echo "autofocus"; } ?>></p>
 				<p>Dificuldade: <input type="text" name="st_dificuldade" value="<?php echo $st_dificuldade; ?>" style="width: 50px"></p>
 				<p><input type="submit" name="st_rodar" value="Jogar"></p>
 			</form><br>
