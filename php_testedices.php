@@ -84,9 +84,9 @@
 		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>Dungeon and Dragons<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Lados: <input type="text" name="dd_lados" value="<?php echo htmlspecialchars( $dd_lados, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'dd_rodar'])) { echo "autofocus"; } ?>></p>
-				<p>Quantidade: <input type="text" name="dd_quantidade" value="<?php echo htmlspecialchars( $dd_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
-				<p>Modificador: <input type="text" name="dd_modificador" value="<?php echo htmlspecialchars( $dd_modificador, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
+				<p>Lados: <input type="number" name="dd_lados" value="<?php echo htmlspecialchars( $dd_lados, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'dd_rodar'])) { echo "autofocus"; } ?>></p>
+				<p>Quantidade: <input type="number" name="dd_quantidade" value="<?php echo htmlspecialchars( $dd_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
+				<p>Modificador: <input type="number" name="dd_modificador" value="<?php echo htmlspecialchars( $dd_modificador, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
 				<p><input type="submit" name="dd_rodar" value="Jogar"></p>
 			</form><br>
 			<p><?php echo $dd_dados; ?></p>
@@ -97,8 +97,8 @@
 		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>GURPS<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Quantidade: <input type="text" name="gurps_quantidade" value="<?php echo htmlspecialchars( $gurps_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'gurps_rodar'])) { echo "autofocus"; } ?>></p>
-				<p>Modificador: <input type="text" name="gurps_modificador" value="<?php echo htmlspecialchars( $gurps_modificador, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
+				<p>Quantidade: <input type="number" name="gurps_quantidade" value="<?php echo htmlspecialchars( $gurps_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'gurps_rodar'])) { echo "autofocus"; } ?>></p>
+				<p>Modificador: <input type="number" name="gurps_modificador" value="<?php echo htmlspecialchars( $gurps_modificador, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
 				<p><input type="submit" name="gurps_rodar" value="Jogar"></p>
 			</form><br>
 			<p><?php echo $gurps_dados; ?></p>
@@ -109,8 +109,8 @@
 		<div style="height:240px; width:360px; display: inline-block; vertical-align: top;">
 			<h1>Storyteller<br></h1>
 			<form action="php_testedices.php" method="POST" style="border: 0px">
-				<p>Quantidade: <input type="text" name="st_quantidade" value="<?php echo htmlspecialchars( $st_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'st_rodar'])) { echo "autofocus"; } ?>></p>
-				<p>Dificuldade: <input type="text" name="st_dificuldade" value="<?php echo htmlspecialchars( $st_dificuldade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
+				<p>Quantidade: <input type="number" name="st_quantidade" value="<?php echo htmlspecialchars( $st_quantidade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px" <?php if( isset( $_POST[ 'st_rodar'])) { echo "autofocus"; } ?>></p>
+				<p>Dificuldade: <input type="number" name="st_dificuldade" value="<?php echo htmlspecialchars( $st_dificuldade, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?>" style="width: 50px"></p>
 				<p><input type="submit" name="st_rodar" value="Jogar"></p>
 			</form><br>
 			<p><?php echo $st_dados; ?></p>
